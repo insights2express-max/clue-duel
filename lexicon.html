@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clue Duel is now Master Keys</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://insights2express-max.github.io/master-keys/">
+  <!-- Forwarding page (Master Keys v09, JM CD-46: 3.2 Y). The old /clue-duel/ address sends every visitor to the same
+       page at /master-keys/ (the game, lexicon.html, …). Saved games, coins and settings carry over: they belong to
+       insights2express-max.github.io, not to the /clue-duel/ part of the address. -->
+  <script>
+    (function () {
+      var rest = location.pathname.replace(/^\/clue-duel\/?/, '');
+      if (rest === 'index.html' || rest === '404.html') rest = '';
+      location.replace('/master-keys/' + rest + location.search + location.hash);
+    })();
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=/master-keys/"></noscript>
+  <style>
+    :root { --bg: #ece6d8; --ink: #1f2933; --link: #1f5fbf; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #12181f; --ink: #e8edf2; --link: #7fb0ff; } }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--ink); font: 17px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; text-align: center; padding: 16px; box-sizing: border-box; }
+    h1 { font-size: 24px; margin: 0 0 8px; }
+    a { color: var(--link); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Clue Duel is now Master Keys</h1>
+    <p>Its two games are now called <b>CrossKeys</b> (formerly Clue Duel) and <b>LockWord</b> (formerly Word Vault).</p>
+    <p>Taking you there… If nothing happens, open <a href="/master-keys/">insights2express-max.github.io/master-keys</a>.</p>
+    <p>Installed the old app? Remove its icon, open the new address and install it again. Your coins and settings are kept.</p>
+  </main>
+</body>
+</html>
